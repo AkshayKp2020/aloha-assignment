@@ -38,7 +38,10 @@
   <link rel="stylesheet" href="../www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 
   <style>
     .checked {
@@ -56,7 +59,23 @@
       box-sizing: border-box;
     }
 
+    .close-button {
+      background-color: transparent;
+      border: none;
+      color: rgba(0, 0, 0, 0.5);
+      padding: 12px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: transparent;
+    }
 
+    /* Darker background on mouse-over */
+    .close-button:hover {
+      color: black;
+      background-color: transparent;
+      border: none;
+    }
+    
 
     .row:after {
       content: "";
@@ -98,7 +117,7 @@
       color: #333333;
       background: white;
       top: 96px;
-      right: 292px;
+      right: 2px;
       font-size: 35px;
       font-weight: bold;
       z-index: 999;
@@ -235,12 +254,12 @@
 
 
 
-  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+  <div id="carouselExampleIndicators">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" class="active"></li>
+      <!---     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -254,8 +273,7 @@
           </div>
           <div class="flex-caption card">
             <div class="card-body">
-              <span><img src="images/yelp.jpg" style="
-    margin-left: -27px;"></span>
+              <span><img src="images/yelp.jpg" style="margin-left: -27px;"></span>
               <span class="forpoint">4.5</span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -609,25 +627,23 @@
 
     <div class="image-grid">
       <div class="image-col img-wrap image1">
-        <i style=" position: absolute; text-align: right;   
-       left: 73%;
-    top: 50%;font-size:40px!important;" aria-hidden="true"></i>
+        <i style=" position: absolute; text-align: right;   left: 25%; top: 50%;font-size:40px!important;"
+          aria-hidden="true"></i>
 
-        <img class="  float-right image1 " src="images/image_2.png" style="width:50%">
+        <img class="  float-right image1 " src="images/image_1.png" style="width:50%">
       </div>
+
       <div class="image-col img-wrap image1" style="text-align: right; vertical-align:center; ">
-        <i style=" position: absolute; text-align: center;   
-    left: 164px;  top: 33%; font-size:40px!important;" aria-hidden="true"></i>
+        <i style=" position: absolute; text-align: center;   left: 25px;  top: 50%; font-size:40px!important;"
+          aria-hidden="true"></i>
 
-        <img a href="#" class="  image1  " src="images/image_1.png" style="width:50%">
+        <img a href="#" class="  image1  " src="images/image_3.png" style="width:50%">
 
       </div>
-      <div class="image-col img-wrap image1">
-        <i style=" position: absolute; text-align: right;   
-    left: 164px;  top: 75%; font-size:40px!important;" aria-hidden="true"></i>
-        <img class="  image1  " src="images/image_3.png" style="width:50%">
-      </div>
+
     </div>
+
+
 
     <button class="w3-button  leftarrow">&#10094;</button>
     <button class="w3-button  rightarrow">&#10095;</button>
@@ -820,10 +836,10 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
           <div class="col-lg-12">
             <h2 class="ftco-heading-2" style="color:#504c45"><b>Insurance</b></h2>
             <ul class="list-unstyled">
-              <p>We accept all kinds of PPO and indemnity insurance. A
+              <p>We accept all kinds of PPO and indemnity insurance. <br>A
                 preferred provider organization, typically referred to as a
                 PPO, offers you easy access to a network of providers
-                who provide services at a discounted rate. It enables
+                who provide services at a discounted rate.<br> It enables
                 patients to seek out-of-network services. </p>
             </ul>
           </div>
@@ -899,7 +915,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
               </div>
             </div>
             <div class="text mt-3 float-right d-block">
-              <p style="color:#717171;"><b>Prevention is truly your best investment. Dental</br>
+              <p style="color:#717171;line-height:150%;"><b>Prevention is truly your best investment. Dental</br>
                   Cleanings, Exams, Sealants, Fluoride Varnish and</br>
                   Nightguards maintain a healthy and</b></p>
               <div class="d-flex align-items-center mt-4 meta">
@@ -929,7 +945,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
               </div>
             </div>
             <div class="text mt-3 float-right d-block">
-              <p style="color:#717171;"><b>Prevention is truly your best investment. Dental</br>
+              <p style="color:#717171; line-height:150%"><b>Prevention is truly your best investment. Dental</br>
                   Cleanings, Exams, Sealants, Fluoride Varnish and</br>
                   Nightguards maintain a healthy and</b></p>
               <p style="font-size: large;">JUSTIN VAUGHN / 23 SEP </p>
@@ -960,7 +976,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
               </div>
             </div>
             <div class="text mt-3 float-right d-block">
-              <p style="color:#717171;"><b>Prevention is truly your best investment. Dental</br>
+              <p style="color:#717171; line-height:150%;"><b>Prevention is truly your best investment. Dental</br>
                   Cleanings, Exams, Sealants, Fluoride Varnish and</br>
                   Nightguards maintain a healthy and</b></p>
               <div class="d-flex align-items-center mt-4 meta">
@@ -997,13 +1013,13 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
             <div class="row">
               <div class="col-lg-6">
                 <a href="#" class="block-20" style="background-image: url('images/aloha/20.png');">
-                </a></div>
+                </a></div><br>
               <div class="col-lg-6 tile-names tile-names-media" style="margin-top: -22px; ">
                 <h3 class="heading"><a style="color:#d0a43f" href="#">Blog title goes here lorem ipsum dolor sit
                     amet..</a></h3>
                 <div class="text mt-3 float-right d-block">
                   <div class="chatbox33">
-                    <p style="font-size: medium;">JUSTIN VAUGHN / 23 SEP </p>
+                    <p style="font-size: medium; line-height:150%;">JUSTIN VAUGHN / 23 SEP </p>
                   </div>
                   <div class="chatbox34">
                     <p class="ml-auto mb-0" style="margin-top: 19px;">
@@ -1035,7 +1051,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
                     amet..</a></h3>
                 <div class="text mt-3 float-right d-block">
                   <div class="chatbox33">
-                    <p style="font-size: medium;">JUSTIN VAUGHN / 23 SEP </p>
+                    <p style="font-size: medium; line-height:150%;">JUSTIN VAUGHN / 23 SEP </p>
                   </div>
                   <div class="chatbox34">
                     <p class="ml-auto mb-0" style="margin-top: 19px;">
@@ -1067,7 +1083,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
                     amet..</a></h3>
                 <div class="text mt-3 float-right d-block">
                   <div class="chatbox33">
-                    <p style="font-size: medium;">JUSTIN VAUGHN / 23 SEP </p>
+                    <p style="font-size: medium; line-height:150%;">JUSTIN VAUGHN / 23 SEP </p>
                   </div>
                   <div class="chatbox34">
                     <p class="ml-auto mb-0" style="margin-top: 19px;">
@@ -1103,34 +1119,38 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
             <img src="images/team/TEAM1.png" alt="Nature" style="width:100%">
             <h3 class="name-color1 yaya">Angel Ortiz</h3>
             <h5 class="name-color1 ayyyy">Physician</h5>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
+            <p style="line-height:150%;">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus
+              sea ei, at tantas oporteat
               nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
           </div>
         </div>
         <div class="column k3">
           <div class="content">
-            <img src="images/team/TEAM2.png" alt="Lights" style="width:100%">
-            <h3 class="name-color1 yaya">Rachel Bush</h3>
+            <img src="images/team/TEAM1.png" alt="Lights" style="width:100%">
+            <h3 class="name-color1 yaya">Angel Ortiz</h3>
             <h5 class="name-color1 ayyyy">Physician</h5>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
+            <p style="line-height:150%;">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus
+              sea ei, at tantas oporteat
               nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
           </div>
         </div>
         <div class="column k3">
           <div class="content">
-            <img src="images/team/TEAM3.png" alt="Nature" style="width:100%">
-            <h3 class="name-color1 yaya">Gene Hodges</h3>
+            <img src="images/team/TEAM1.png" alt="Nature" style="width:100%">
+            <h3 class="name-color1 yaya">Angel Ortiz</h3>
             <h5 class="name-color1 ayyyy">Physician</h5>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
+            <p style="line-height:150%;">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus
+              sea ei, at tantas oporteat
               nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
           </div>
         </div>
         <div class="column k3">
           <div class="content">
-            <img src="images/team/TEAM4.png" alt="Mountains" style="width:100%">
-            <h3 class="name-color1 yaya">Todd Montgomery</h3>
+            <img src="images/team/TEAM1.png" alt="Mountains" style="width:100%">
+            <h3 class="name-color1 yaya">Angel Ortiz</h3>
             <h5 class="name-color1 ayyyy">Physician</h5>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
+            <p style="line-height:150%;">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus
+              sea ei, at tantas oporteat
               nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
           </div>
         </div>
@@ -1140,22 +1160,22 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
      
 	color:#4f4b41!important;
     padding: 15px 35px;background-color:#d0a43f!important;"><b>View All </b></a>
-	  
-	</div>
+
+      </div>
 
     </div>
   </div>
-  
-  
-  
-  
+
+
+
+
   <div class="sponsers bg-light">
     <div class="cont">
       <h2 style="text-align:center; 
     color: #273138;"><b>Awards</b></h2>
 
       <!-- clients -->
-      <div class="cont "    style="width: 100%!important; color: rgb(255, 255, 255);">
+      <div class="cont " style="width: 100%!important; color: rgb(255, 255, 255);">
         <div class="row">
           <div class="col-xs-6 col-md-2 aligncenter client">
             <img alt="logo" src="images/clients/A1.png" class="img-responsive" />
@@ -1229,8 +1249,8 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
                   <p style="color:#565656!important; "> Wed - 9 AM to 6 PM</p>
                   <p class="box-color week-day"> Thu - Close</p>
                   <p style="color:#565656!important;"> Fri - 9 AM to 6 PM</p>
-                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p>
-                  <span class="box-color week-day"> Sun - Close </span>
+                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p><br>
+                  <p class="box-color week-day">
                 </b> </p>
 
 
@@ -1256,18 +1276,16 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
   bottom: 30px!important;
     height: 246px;">
 
-
-              <p style="color:#565656!important; top: 10px;">
+              <p style="color:#565656!important;">
                 <b>
                   <p style="color:#565656!important;margin-left: 0px; ">Mon - 9 AM to 6 PM</p>
                   <p style="color:#565656!important;"> Tue - 9 AM to 6 PM</p>
                   <p style="color:#565656!important; "> Wed - 9 AM to 6 PM</p>
                   <p class="box-color week-day"> Thu - Close</p>
                   <p style="color:#565656!important;"> Fri - 9 AM to 6 PM</p>
-                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p>
-                  <span class="box-color week-day"> Sun - Close </span>
-                </b> </p>
+                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p><br>
 
+                </b> </p>
 
             </div>
             <div class="flex-cap" style="    right: 377px!important;
@@ -1291,14 +1309,15 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
   bottom: 30px!important;
     height: 246px;">
 
-              <p style="color:#565656!important"><b>
+              <p style="color:#565656!important;">
+                <b>
                   <p style="color:#565656!important;margin-left: 0px; ">Mon - 9 AM to 6 PM</p>
                   <p style="color:#565656!important;"> Tue - 9 AM to 6 PM</p>
                   <p style="color:#565656!important; "> Wed - 9 AM to 6 PM</p>
                   <p class="box-color week-day"> Thu - Close</p>
                   <p style="color:#565656!important;"> Fri - 9 AM to 6 PM</p>
-                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p>
-                  <span class="box-color week-day"> Sun - Close </span>
+                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p><br>
+
                 </b> </p>
 
 
@@ -1391,13 +1410,18 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
     height: 246px; ">
 
 
-              <p style="color:#565656!important"><b>0Mon - 9 AM to 6 PM</br>
-                  Tue - 9 AM to 6 PM</br>
-                  Wed - 9 AM to 6 PM</br>
-                  <span class="box-color"> Thu - Close</span></br>
-                  Fri - 9 AM to 6 PM</br>
-                  Sat - 9 AM to 6 PM</br>
-                  <span class="box-color"> Sun - Close </span></b> </p>
+
+              <p style="color:#565656!important;">
+                <b>
+                  <p style="color:#565656!important;margin-left: 0px; ">Mon - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important;"> Tue - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important; "> Wed - 9 AM to 6 PM</p>
+                  <p class="box-color week-day"> Thu - Close</p>
+                  <p style="color:#565656!important;"> Fri - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p><br>
+
+                </b> </p>
+
 
 
             </div>
@@ -1421,15 +1445,16 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
     width: 200px!important;
   bottom: 30px!important;
     height: 246px;">
+              <p style="color:#565656!important;">
+                <b>
+                  <p style="color:#565656!important;margin-left: 0px; ">Mon - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important;"> Tue - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important; "> Wed - 9 AM to 6 PM</p>
+                  <p class="box-color week-day"> Thu - Close</p>
+                  <p style="color:#565656!important;"> Fri - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p><br>
 
-
-              <p style="color:#565656!important"><b>0Mon - 9 AM to 6 PM</br>
-                  Tue - 9 AM to 6 PM</br>
-                  Wed - 9 AM to 6 PM</br>
-                  <span class="box-color"> Thu - Close</span></br>
-                  Fri - 9 AM to 6 PM</br>
-                  Sat - 9 AM to 6 PM</br>
-                  <span class="box-color"> Sun - Close </span></b> </p>
+                </b> </p>
 
 
             </div>
@@ -1454,13 +1479,16 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
   bottom: 30px!important;
     height: 246px;">
 
-              <p style="color:#565656!important"><b>0Mon - 9 AM to 6 PM</br>
-                  Tue - 9 AM to 6 PM</br>
-                  Wed - 9 AM to 6 PM</br>
-                  <span class="box-color"> Thu - Close</span></br>
-                  Fri - 9 AM to 6 PM</br>
-                  Sat - 9 AM to 6 PM</br>
-                  <span class="box-color"> Sun - Close </span></b> </p>
+              <p style="color:#565656!important"><b>
+                  <p style="color:#565656!important;margin-left: 0px; ">Mon - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important;"> Tue - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important; "> Wed - 9 AM to 6 PM</p>
+                  <p class="box-color week-day"> Thu - Close</p>
+                  <p style="color:#565656!important;"> Fri - 9 AM to 6 PM</p>
+                  <p style="color:#565656!important;"> Sat - 9 AM to 6 PM</p>
+
+                </b> </p>
+
 
 
             </div>
@@ -1835,7 +1863,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
             <div class="row ">
 
               <div class="col-lg-4"
-                style=" height: 500px; background-size: cover; background-image: url('images/staff-2.jpg')">
+                style=" height: 500px; background-size: cover; background-image: url('images/team/TEAM1.png')">
                 <div class="flex-caption1  pic-cap1" style="right: 60px;
     width: 200px!important;
       bottom: 79px!important; height: 108px;">
@@ -1870,7 +1898,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
 
               </div>
               <div class="col-lg-4 " style="padding-right: 0px!important;
-                 height: 500px; background-size: cover; background-image: url('images/staff-3.jpg')">
+                 height: 500px; background-size: cover; background-image: url('images/team/TEAM2.png')">
                 <div class="flex-caption1  pic-cap1" style="right: 60px;
     width: 200px!important;
   bottom: 79px!important; height: 108px;">
@@ -1932,10 +1960,11 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
           <div class="col-lg-11 head-space" style="height:40px!important;">
             <h2 style="text-align:center;color:#d9b24f;"><b>Book an Appointment</b></h2>
           </div>
-          <div class="col-lg-1" style="height:40px!important;">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <div class="col-lg-1" style="height:40px!important; color: #000;">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
-            </button>
+            </button> -->
+            <button type="button" class="btn close-button" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
           </div>
         </div>
         <div class="modal-body" style="background-color: #efe9db;">
@@ -1946,7 +1975,7 @@ border-radius: 50%;text-align: center;     padding-top: 77px;">
               <div class="col-lg-3 ">
                 <div class="popstaff">
                   <div class="img-wrap d-flex align-items-stretch">
-                    <div class="popimage align-self-stretch  overimage" style="background-image: url(images/staff-1.jpg); position: relative;
+                    <div class="popimage align-self-stretch  overimage" style="background-image: url(images/team/TEAM2.png); position: relative;
   display: inline-block;
 
  
