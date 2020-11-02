@@ -5154,6 +5154,7 @@ a.close.disabled {
   width: 100%;
   overflow: hidden; }
   .carousel-inner::after {
+    
     display: block;
     clear: both;
     content: ""; }
@@ -10337,7 +10338,7 @@ display: inline-block;
   bottom:0;
   left:0;
   right:0;
-  background:rgba(0,0,0,0.7);
+  background:rgba(0,0,0,0);
 }
 
 
